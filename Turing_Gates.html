@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .header{
+                width: 93%;
+                margin: auto;
+                padding: 10px;
+                color: blue;
+                background-color: cadetblue;
+                font-size: large;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: center;
+            }
+            .body{
+                font-size: 17px;
+                font-family: arial;
+                background: #f4f4f4;
+                line-height: 1.5em;
+            }
+            #container{
+                width: 100%;
+                margin: auto;
+                padding: 10px;
+                
+            }
+
+            #box1{
+                background: rgb(234, 238, 234);
+                color: rgb(20, 18, 18);
+                width: 90%;
+                margin: auto;
+                padding: 10px;
+                text-align: center;
+                border: cadetblue;
+                border-style: dashed;
+            }
+            
+            #box2{
+                background: rgb(234, 238, 234);
+                color: rgb(31, 22, 22);
+                width: 90%;
+                margin: auto;
+                padding: 10px;
+                text-align: center;
+                border: cadetblue;
+                border-style: dashed;
+            }
+
+            #box3{
+                background: rgb(234, 238, 234);
+                color: rgb(20, 18, 18);
+                width: 90%;
+                margin: auto;
+                padding: 10px;
+                text-align: center;
+                border: cadetblue;
+                border-style: dashed;
+            }
+
+           #imgs{
+                width: 300px;
+            }
+            
+        </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <header id="box2">
+            <p style="text-align: center;">'Chose'</p>
+            <select id='select' name='Chose' value='Chose a cryze..'> 
+                <option> Bill Gate1</option>
+                <option>Bill Gate2</option>
+                <option>Alan Turing</option>
+            </select>
+            <h1>
+                Jquery Bonanza
+            </h1> 
+     </header>
+
+        <div id='box1'>
+            <div id=img1b> <img src="1b.jpg" id ='imgs'>  </div> 
+            <div id='img2b'> <img src="2b.jpg" id ='imgs'></div>
+            <div id='img3b'> <img src="3b.jpg" id ='imgs'></div>
+        </div>
+  
+        <div id='box2'>
+            <div id=img1bb> <img src="1b.jpg" id ='imgs'>  </div> 
+           <div id='img2bb'> <img src="2b.jpg" id ='imgs'></div>
+           <div id='img3bb'> <img src="3b.jpg" id ='imgs'></div>
+        </div>
+
+        <div id='box3'>
+           <div id=img1a> <img src="1a.jpg" id ='imgs'>  </div> 
+           <div id='img2a'> <img src="2a.jpg" id ='imgs'></div>
+           <div id='img3a'> <img src="3a.jpg" id ='imgs'></div>
+         </div> 
+         
+    </div>
+
+    <script>
+        $('#img2b').hide();
+        $('#img3b').hide();
+
+        $('#img1b').click(function(){
+            $('#img1b').show(1000);
+            $('#img2b').show(2000);
+            $('#img3b').show(3000);
+        });
+
+        $('#img1bb').hide();
+        $('#img3bb').hide();
+
+        $('#img2bb').click(function(){
+            $('#img1bb').show(1000);
+            $('#img3bb').show(2000);
+        });
+       
+        $('#img1a').hide();
+        $('#img2a').hide();
+
+        $('#img3a').click(function(){
+            $('#img1a').show(1000)
+            $('#img2a').show(2000)
+        });
+
+       
+
+
+
+      
+       
+
+       
+       
+
+    </script>
+</body>
+</html>
